@@ -1828,6 +1828,10 @@ img {
 }
 
 .phone-first svg {
+  -webkit-transition: all linear .5s;
+  -o-transition: all linear .5s;
+  transition: all linear .5s;
+  margin-left: 5px;
   position: absolute;
   top: 15px;
   right: 36px;
@@ -1837,9 +1841,11 @@ img {
   -webkit-transition: all linear .5s;
   -o-transition: all linear .5s;
   transition: all linear .5s;
-  color: #fff;
-  margin-left: 5px;
   fill: #fff;
+}
+
+.phone-first:hover path {
+  fill: #000;
 }
 
 .form-row {
@@ -1914,20 +1920,10 @@ input[type="submit"] {
   text-decoration: none;
   color: #000;
   background: #FFC406;
-  fill: #000;
 }
 
-.form-row-button:hover .phone-first svg path path {
+.form-row-button:hover .phone-first svg path {
   fill: #000;
-}
-
-.form-row-button svg path {
-  -webkit-transition: all linear .5s;
-  -o-transition: all linear .5s;
-  transition: all linear .5s;
-  color: #fff;
-  margin-left: 5px;
-  fill: #fff;
 }
 
 .second-screen {
@@ -2758,7 +2754,8 @@ input[type="submit"] {
 }
 
 .breadcrumbs {
-  margin: 58px 0;
+  margin: 18px 0;
+  margin-top: 120px;
   -webkit-transition: all ease-in .5s;
   -o-transition: all ease-in .5s;
   transition: all ease-in .5s;
@@ -6843,8 +6840,86 @@ input[type="submit"] {
 }
 
 @media screen and (min-width: 1820px) {
+  .footer__content-title h3 {
+    font-size: 37px;
+  }
+
+  .seven-screen__title h3 {
+    font-size: 37px;
+  }
+
+  .six-screen__title h3 {
+    font-size: 37px;
+  }
+
+  .five-screen__content-title h3 {
+    padding-top: 108px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+  }
+
+  .four-screen__title h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+  }
+
+  .third-screen__title h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+  }
+
+  .second-screen_title h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+  }
+
+  .right-block__price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  .five-screen__content-title img {
+    position: absolute;
+    left: 50%;
+    margin-left: -82px;
+    top: -90px;
+    width: 150px;
+  }
+
+  .works-info {
+    margin-left: 70px;
+  }
+
+  .four-screen__title img {
+    top: -182px !important;
+  }
+
+  .four-screen__title img {
+    position: absolute;
+    left: 46%;
+    margin-left: -22px;
+    top: -102px;
+    z-index: 99;
+    width: 150px;
+  }
+
+  .third-screen {
+    background-position: unset;
+    background-image: url(../img/bg-3.png);
+    width: 100%;
+    position: relative;
+    bottom: 139px;
+    z-index: 99;
+    background-size: cover;
+  }
+
   .footer-phones-right p a {
-    font-size: 18.003px;
+    font-size: 19.003px;
   }
 
   .footer-phones-left a {
@@ -6852,7 +6927,7 @@ input[type="submit"] {
   }
 
   .footer-text p {
-    font-size: 16.003px;
+    font-size: 19.003px;
   }
 
   .seven-screen-item__button a {
@@ -6922,10 +6997,6 @@ input[type="submit"] {
     font-size: 30px;
   }
 
-  .four-screen__title img {
-    top: -148px;
-  }
-
   .five-screen__content-title p {
     font-size: 22px;
   }
@@ -6935,9 +7006,9 @@ input[type="submit"] {
   }
 
   .five-screen__content-advantages {
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .four-screen__content {
@@ -6947,7 +7018,7 @@ input[type="submit"] {
   }
 
   .second-screen {
-    min-height: 913px;
+    min-height: 763px;
   }
 
   .third-screen {
@@ -7787,6 +7858,12 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 640px) {
+  .five-screen__content-title img {
+    position: absolute;
+    left: 50%;
+    margin-left: -38px;
+  }
+
   .first-screen-content-right-form {
     right: 28vw;
     width: 77%;
@@ -7838,10 +7915,23 @@ input[type="submit"] {
 
   .second-screen {
     background-size: cover;
-    background: url(../img/bg-second.svg);
+    background: url(../img/greenmob.svg);
     background-size: cover;
     background-position: 50% 50%;
     z-index: 99;
+  }
+
+  .second-screen::after {
+    content: "";
+    background: transparent;
+    background-size: cover;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
   }
 
   .third-screen {
