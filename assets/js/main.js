@@ -1,7 +1,5 @@
 "use strict";
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 window.addEventListener('load', function () {
   console.log('All resources finished loading!');
   $('a').click(function () {
@@ -43,14 +41,7 @@ window.addEventListener('load', function () {
       div.style.opacity = '0';
     } //btn.classList.remove('is-active');
 
-  } //================================================================//
-  //*********** main.js
-  //*********** © Dariya Leleka - code
-  //*********** Описание поведения slider
-  //*********** 
-  //*********** 
-  //================================================================//
-
+  }
 
   $('.second-screen_content__items').slick({
     slidesToShow: 4,
@@ -62,8 +53,6 @@ window.addEventListener('load', function () {
       breakpoint: 1200,
       settings: {
         arrows: true,
-        //centerMode: true,
-        //centerPadding: '40px',
         slidesToShow: 3,
         appendArrows: $('.second-screen_content__arrows'),
         prevArrow: '<div class="arrow"><img src="assets/img/slider-arrow-back.svg" alt=""> </div>',
@@ -76,20 +65,16 @@ window.addEventListener('load', function () {
         appendArrows: $('.second-screen_content__arrows'),
         prevArrow: '<div class="arrow"><img src="assets/img/slider-arrow-back.svg" alt=""> </div>',
         nextArrow: '<div class="arrow"><img src="assets/img/slider-arrow-next.svg" alt=""></div>',
-        //centerMode: true,
-        //centerPadding: '40px',
         slidesToShow: 2,
         slidesToScroll: 1
       }
     }, {
-      breakpoint: 768,
+      breakpoint: 770,
       settings: {
         arrows: true,
         appendArrows: $('.second-screen_content__arrows'),
         prevArrow: '<div class="arrow"><img src="assets/img/slider-arrow-back.svg" alt=""> </div>',
         nextArrow: '<div class="arrow"><img src="assets/img/slider-arrow-next.svg" alt=""></div>',
-        //centerMode: true,
-        //centerPadding: '40px',
         slidesToShow: 1,
         slidesToScroll: 1
       }
@@ -98,8 +83,7 @@ window.addEventListener('load', function () {
       settings: {
         arrows: true,
         slidesToScroll: 1,
-        //centerMode: true,
-        centerPadding: '40px',
+        //centerPadding: '40px',
         slidesToShow: 1,
         appendArrows: $('.second-screen_content__arrows'),
         prevArrow: '<div class="arrow"><img src="assets/img/slider-arrow-back.svg" alt=""> </div>',
@@ -109,8 +93,6 @@ window.addEventListener('load', function () {
   });
 });
 window.addEventListener('load', function () {
-  var _settings;
-
   $('.six-screen__items').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -124,7 +106,6 @@ window.addEventListener('load', function () {
       breakpoint: 1200,
       settings: {
         arrows: true,
-        //centerMode: true,
         centerPadding: '40px',
         slidesToShow: 3
       }
@@ -132,30 +113,27 @@ window.addEventListener('load', function () {
       breakpoint: 992,
       settings: {
         arrows: true,
-        //centerMode: true,
-        //centerPadding: '40px',
         slidesToShow: 2
       }
     }, {
       breakpoint: 768,
       settings: {
         arrows: true,
-        //centerMode: true,
-        //centerPadding: '40px',
         slidesToShow: 1
       }
     }, {
       breakpoint: 560,
-      settings: (_settings = {
+      settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
-      }, _defineProperty(_settings, "slidesToShow", 1), _defineProperty(_settings, "appendArrows", $('.six-screen-arrows')), _defineProperty(_settings, "prevArrow", '<div class="arrow arow-new"><img src="assets/img/slider-arrow-back.svg" alt=""> </div>'), _defineProperty(_settings, "nextArrow", '<div class="arrow arow-new"><img src="assets/img/slider-arrow-next.svg" alt=""></div>'), _settings)
+        slidesToScroll: 1,
+        appendArrows: $('.six-screen-arrows'),
+        prevArrow: '<div class="arrow arow-new"><img src="assets/img/slider-arrow-back.svg" alt=""> </div>',
+        nextArrow: '<div class="arrow arow-new"><img src="assets/img/slider-arrow-next.svg" alt=""></div>'
+      }
     }]
   });
 });
 window.addEventListener('load', function () {
-  var _settings2;
-
   $('.seven-screen__items').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -169,7 +147,6 @@ window.addEventListener('load', function () {
       breakpoint: 1200,
       settings: {
         arrows: true,
-        //centerMode: true,
         centerPadding: '40px',
         slidesToShow: 3
       }
@@ -177,34 +154,26 @@ window.addEventListener('load', function () {
       breakpoint: 992,
       settings: {
         arrows: true,
-        //centerMode: true,
-        //centerPadding: '40px',
         slidesToShow: 2
       }
     }, {
       breakpoint: 768,
       settings: {
         arrows: true,
-        //centerMode: true,
-        //centerPadding: '40px',
         slidesToShow: 1
       }
     }, {
       breakpoint: 560,
-      settings: (_settings2 = {
+      settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
-      }, _defineProperty(_settings2, "slidesToShow", 1), _defineProperty(_settings2, "appendArrows", $('.seven-screen-arrows')), _defineProperty(_settings2, "prevArrow", '<div class="arrow arow-new"><img src="assets/img/slider-arrow-back.svg" alt=""> </div>'), _defineProperty(_settings2, "nextArrow", '<div class="arrow arow-new"><img src="assets/img/slider-arrow-next.svg" alt=""></div>'), _settings2)
+        slidesToScroll: 1,
+        appendArrows: $('.seven-screen-arrows'),
+        prevArrow: '<div class="arrow arow-new"><img src="assets/img/slider-arrow-back.svg" alt=""> </div>',
+        nextArrow: '<div class="arrow arow-new"><img src="assets/img/slider-arrow-next.svg" alt=""></div>'
+      }
     }]
   });
-}); //================================================================//
-//*********** main.js
-//*********** © Dariya Leleka - code
-//*********** Плавный скролл
-//*********** 
-//*********** 
-//================================================================//
-
+});
 $("a.scroll-to").on("click", function (e) {
   e.preventDefault();
   var anchor = $(this).attr('href');
