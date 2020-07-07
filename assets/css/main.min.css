@@ -7032,6 +7032,13 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 1400px) {
+  .four-screen__title img {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -133px;
+  }
+
   .third-screen {
     bottom: 162px;
     z-index: 99;
