@@ -1901,6 +1901,7 @@ input[type="submit"] {
   font-weight: 500;
   font-size: 17px;
   line-height: 22px;
+  padding-right: 36px !important;
   color: #FFFFFF;
   background: #6EC629;
   text-align: center;
@@ -7228,6 +7229,12 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 835px) {
+  .man {
+    position: absolute;
+    left: 152px;
+    top: 33px;
+  }
+
   .five-screen__content-advantages__right {
     position: relative;
     width: 48%;
@@ -7257,6 +7264,11 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 768px) {
+  .first-screen-content-left {
+    bottom: 0;
+    height: 869px;
+  }
+
   .second-screen_container {
     padding: 0 40px;
   }
@@ -7398,6 +7410,21 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 660px) {
+  .man {
+    position: absolute;
+    left: 0px;
+    top: 18px;
+    width: 100%;
+  }
+
+  .form-phones {
+    bottom: 72px;
+  }
+
+  .first-screen {
+    min-height: 700px;
+  }
+
   .third-screen {
     bottom: 125px;
   }
@@ -7473,13 +7500,6 @@ input[type="submit"] {
 
   .form-phones__phones_content {
     width: 31%;
-  }
-
-  .man {
-    position: absolute;
-    left: 0px;
-    top: 11px;
-    width: 100%;
   }
 
   .second-screen_content {
@@ -7622,7 +7642,6 @@ input[type="submit"] {
   .form-phones {
     width: 100%;
     left: 0px;
-    bottom: 0;
   }
 
   .first-screen-content-right-man {
@@ -7767,7 +7786,39 @@ input[type="submit"] {
   }
 }
 
+@media screen and (max-width: 640px) {
+  .first-screen-content-right-form {
+    right: 28vw;
+    width: 77%;
+    top: 23vw;
+  }
+
+  .man {
+    position: absolute;
+    left: -45%;
+  }
+}
+
 @media screen and (max-width: 595px) {
+  .four-screen__title img {
+    top: -96px;
+  }
+
+  .man {
+    position: absolute;
+    left: 0;
+  }
+
+  .first-screen-content-right-form {
+    right: 19vw;
+    width: 64%;
+    top: 48vw;
+  }
+
+  .second-screen {
+    max-height: 640px;
+  }
+
   .works-info {
     width: 70%;
     margin-left: 80px;
@@ -7802,7 +7853,6 @@ input[type="submit"] {
   }
 
   .first-screen {
-    background: url(../img/bg-mob-1.svg);
     background-color: rgba(0, 0, 0, 0.7);
     background-size: cover;
   }
@@ -7853,15 +7903,24 @@ input[type="submit"] {
   }
 }
 
-@media only screen and (max-width: 414px) and (max-height: 736px) {
-  .first-screen {
-    height: 99%;
+@media screen and (max-width: 414px) {
+  .phone-first svg {
+    position: absolute;
+    top: 15px;
+    right: 39px;
+  }
+
+  .four-screen__title img {
+    margin-left: -41px;
+    top: -95px;
+  }
+
+  .first-screen-content-right {
+    height: 485px;
   }
 
   .form-phones {
-    width: 100%;
-    left: 0px;
-    bottom: 43px;
+    bottom: 0;
   }
 }
 
@@ -7877,6 +7936,12 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 375px) {
+  .man {
+    position: absolute;
+    left: 0px;
+    top: 15px;
+  }
+
   .four-screen__title img {
     top: -91px;
   }
@@ -7962,6 +8027,13 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 360px) {
+  .man {
+    position: absolute;
+    left: 0px;
+    top: 29px;
+    width: 100%;
+  }
+
   .arrow-form {
     position: absolute;
     right: 28px;

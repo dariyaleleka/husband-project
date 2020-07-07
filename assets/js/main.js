@@ -75,7 +75,7 @@ window.addEventListener('load', function () {
         appendArrows: $('.second-screen_content__arrows'),
         prevArrow: '<div class="arrow"><img src="assets/img/slider-arrow-back.svg" alt=""> </div>',
         nextArrow: '<div class="arrow"><img src="assets/img/slider-arrow-next.svg" alt=""></div>',
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     }, {
